@@ -12,3 +12,5 @@ deploy:
   password: $OPENSHIFT_PASSWORD
   app: $OPENSHIFT_APP_NAME
   domain: $OPENSHIFT_APP_NAMESPACE
+  on:
+    all_branches: true
