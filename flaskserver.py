@@ -11,7 +11,7 @@ app.config.from_pyfile('flaskserver.cfg')
 
 @app.route('/')
 def hello_world():
-    return 'Hello World!'
+    return 'Hello World! If this is present then travis is able to successfully deploy to OpenShift!!'
 
 @app.route('/pravinth')
 def hello_pravinth():
