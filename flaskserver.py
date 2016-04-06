@@ -7,6 +7,7 @@ Created on Wed Apr  6 11:37:13 2016
 
 from flask import Flask
 app = Flask(__name__)
+app.config.from_pyfile('flaskserver.cfg')
 
 @app.route('/')
 def hello_world():
