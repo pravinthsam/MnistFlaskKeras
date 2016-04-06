@@ -13,5 +13,9 @@ app.config.from_pyfile('flaskserver.cfg')
 def hello_world():
     return 'Hello World!'
 
+@app.route('/pravinth')
+def hello_pravinth():
+    return 'Hello <H2>Pravinth</H2>!'
+
 if __name__ == '__main__':
     app.run()
